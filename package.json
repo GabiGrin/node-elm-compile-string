@@ -1,6 +1,6 @@
 {
   "name": "node-elm-compile-string",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Compile Elm code directly from a string",
   "license": "MIT",
   "repository": "GabiGrin/node-elm-compile-string",
