@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 const ncp = require('ncp').ncp;
-const temp = require('temp');// .track();
+const temp = require('temp').track();
 const execa = require('execa');
 const tempDirName = 'node-elm-compiler';
 const promisify = require('native-promisify');
