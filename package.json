@@ -1,6 +1,6 @@
 {
   "name": "node-elm-compile-string",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Compile Elm code directly from a string",
   "license": "MIT",
   "repository": "GabiGrin/node-elm-compile-string",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "xo index.js test.js && ava",
-		"patch": "npm version patch && git push && npm publish"
+    "patch": "npm version patch && git push && npm publish"
   },
   "files": [
     "index.js"
@@ -29,7 +29,7 @@
     "node-elm-compiler": "^3.0.0",
     "promisify": "0.0.3",
     "temp": "^0.8.3",
-		"elm": "~0.16.0"
+    "elm": "~0.16.0"
   },
   "devDependencies": {
     "ava": "^0.11.0",
