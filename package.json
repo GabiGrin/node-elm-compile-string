@@ -10,7 +10,7 @@
     "url": "github.com/GabiGrin"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0.0"
   },
   "scripts": {
     "test": "xo index.js test.js && ava"
