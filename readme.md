@@ -1,6 +1,6 @@
 # node-elm-compile-string [![Build Status](https://travis-ci.org/GabiGrin/node-elm-compile.svg?branch=master)](https://travis-ci.org/GabiGrin/node-elm-compile-string)
 
-Elm compiler as a function - receives a code string and outputs the compiled result as a JS or HTML string using promises.
+Elm compiler wrapper as a function - receives a code string and outputs the compiled result as a JS or HTML string using promises.
 
 It'll load some [basic packages](cache/elm-package.json) for you, and do it from cache so it'll run fast.
 
@@ -29,19 +29,18 @@ nodeElmCompile(elmCompile)
 	}, err => {
 		console.error(err);
 	});
-//=> 'unicorns & rainbows'
 ```
 
 
 ## API
 
-### nodeElmCompile(input, [options])
+### nodeElmCompile(elmCode, [options])
 
-#### input
+#### elmCode
 
 Type: `string`
 
-Lorem ipsum.
+Elm code that needs to be compiled
 
 #### options
 
@@ -49,6 +48,8 @@ Lorem ipsum.
 
 Type: `string`<br>
 Default: `html`
+
+Control whether the compiled should output  `html` or `js` code.
 
 
 ## License
