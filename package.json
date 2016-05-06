@@ -17,7 +17,8 @@
     "patch": "npm version patch && git push && npm publish"
   },
   "files": [
-    "index.js"
+    "index.js",
+		"cache/**"
   ],
   "keywords": [
     ""
