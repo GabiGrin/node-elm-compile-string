@@ -3,16 +3,17 @@ const fs = require('fs');
 const path = require('path');
 const ncp = require('ncp').ncp;
 const temp = require('temp').track();
-const execa = require('execa');
-const tempDirName = 'node-elm-compiler';
 const promisify = require('native-promisify');
+const spawn = require('cross-spawn-promise');
+
+const tempDirName = 'node-elm-compiler';
 
 const makeTempDir = () => promisify(temp.mkdir)(tempDirName);
 
 const defaultOptions = {output: 'html'};
 
 const compileElmInDir = (dir, opts) => {
-	return execa('elm-make', ['--yes', 'main.elm', `--output=main.${opts.output}`], {cwd: dir})
+	return spawn('elm-make', ['--yes', 'main.elm', `--output=main.${opts.output}`], {cwd: dir})
 		.then(() => dir)
 		.catch(err => {
 			throw new Error(err.stderr);
