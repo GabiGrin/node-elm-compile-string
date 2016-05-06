@@ -1,10 +1,12 @@
-# node-elm-compile-string [![Build Status](https://travis-ci.org/GabiGrin/node-elm-compile.svg?branch=master)](https://travis-ci.org/GabiGrin/node-elm-compile-string)
+# node-elm-compile-string [![Build Status](https://travis-ci.org/GabiGrin/node-elm-compile-string.svg?branch=master)](https://travis-ci.org/GabiGrin/node-elm-compile-string)
 
 Elm compiler wrapper as a function - receives a code string and outputs the compiled result as a JS or HTML string using promises.
 
 It'll load some [basic packages](cache/elm-package.json) for you, and do it from cache so it'll run fast.
 
 This should be used only if you want to compile simple Elm code on demand, from a string. Otherwise, see [node-elm-compiler](https://github.com/rtfeldman/node-elm-compiler)
+
+You *must* have the [Elm compiler](http://elm-lang.org/install) installed in order for this to work.
 
 ## Install
 
